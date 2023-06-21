@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="h1">
+                <h1>The Library</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="btn-div">
+                <button class="btn-add-book" id="btn-add-book">Add Book</button>
+            </div>
+            <div class="bookContainer" id="bookContainer">
+                <div id="formCon">
+                    <form class="add-book-form" id="addBookForm">
+                        <h3>Add new book</h3>
+                        <input
+                          class="input"
+                          type="text"
+                          id="title"
+                          placeholder="Title"
+                          required
+                          maxlength="100"
+                        />
+                        <p class="error-msg" id="errorMsg"></p>
+                        <input
+                          class="input"
+                          type="text"
+                          id="author"
+                          placeholder="Author"
+                          required
+                          maxlength="100"
+                        />
+                        <input
+                          class="input"
+                          type="number"
+                          id="pages"
+                          placeholder="Pages"
+                          required
+                          max="10000"
+                        />
+                        <div class="is-read">
+                          <label for="read">Have you read it?</label>
+                          <input class="checkbox" type="checkbox" id="read" />
+                        </div>
+                        <button class="btn btn-light-green" id="submitBook" type="submit">Submit</button>
+                      </form>
+                </div>
+            </div>
+            <div class="myBooks" id="myBooks"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
