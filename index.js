@@ -118,7 +118,7 @@ function createBookCard (book) {
 }
 function clearInputs () {
   var allInputs = document.querySelectorAll('input');
-allInputs.forEach(singleInput => singleInput.value = '');
+  allInputs.forEach(singleInput => singleInput.value = '');
 }
 //event listeners
 //prevent page from refreshing on submit click
